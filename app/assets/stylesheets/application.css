@@ -27,6 +27,9 @@ header {
   text-align: center;
   border-top: solid 5px #000;
 }
+header, h1, nav, .list-commnent {
+  font-family: 'Kaushan Script', cursive, sans-serif;
+}
 
 header .headline {
   font-size: 32px;
@@ -65,8 +68,27 @@ main {
   width: 200px;
   height: 250px;
   margin: 10px;
+  position: relative;
 }
 
 .list-comment {
   width: 200px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.list-body {
+  display: block;
+  color: gray;
+  font-size: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.list-title {
+  font-size: 18px;
+  display: block;
+  text-overflow: ellipsis;
 }
